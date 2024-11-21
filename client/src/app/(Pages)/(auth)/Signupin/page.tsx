@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Sun, Moon, Eye, EyeOff } from "lucide-react";
 import axios from "axios";
-
+import Link from "next/link";
 export default function AuthPage() {
   const router = useRouter();
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -282,6 +282,8 @@ export default function AuthPage() {
                 className="animate-fade-in"
                 style={{ animationDelay: "0.1s" }}
               ></div>
+              <Link href="/Maindashboard">
+
               <button
                 type="submit"
                 className={`w-full py-2.5 rounded-lg text-lg font-medium transition-all duration-300 ${
@@ -292,6 +294,7 @@ export default function AuthPage() {
               >
                 {isSignIn ? "Sign In" : "Sign Up"}
               </button>
+              </Link>
             </form>
             <div className="flex justify-center mt-4">
               <button
@@ -308,16 +311,16 @@ export default function AuthPage() {
               </button>
             </div>
             <div className="flex justify-center mt-4">
-              <button
-                onClick={handleGoogleOAuth}
-                className={`flex items-center space-x-2 text-lg bg-blue-500 hover:bg-blue-600 p-3 w-full rounded-lg justify-center  ${
-                  isDarkMode
-                    ? "bg-blue-600 text-white hover:bg-blue-500 focus:ring-4 focus:ring-blue-600/30"
-                    : "bg-blue-600 text-white hover:bg-blue-500 focus:ring-4 focus:ring-blue-600/30"
-                }`}
-              >
-                Sign in with Google
-              </button>
+                <button
+                  onClick={handleGoogleOAuth}
+                  className={`flex items-center space-x-2 text-lg bg-blue-500 hover:bg-blue-600 p-3 w-full rounded-lg justify-center  ${
+                    isDarkMode
+                      ? "bg-blue-600 text-white hover:bg-blue-500 focus:ring-4 focus:ring-blue-600/30"
+                      : "bg-blue-600 text-white hover:bg-blue-500 focus:ring-4 focus:ring-blue-600/30"
+                  }`}
+                >
+                  Sign in with Google
+                </button>
             </div>
           </div>
         </div>
