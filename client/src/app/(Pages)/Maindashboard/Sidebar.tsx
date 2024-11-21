@@ -18,6 +18,7 @@ import clsx from "clsx";
 
 const navigation = [
   { name: "Dashboard", icon: LayoutDashboard, href: "/Maindashboard" },
+  { name: "Check Your Creditscore", icon: HandCoins, href: "/creditscore" },
   { name: "Request Loan", icon: HandCoins, href: "/request-loan" },
   { name: "Crowdfunding", icon: Users, href: "/crowdfunding" },
   { name: "Create Account", icon: PiggyBank, href: "/createAccount" },

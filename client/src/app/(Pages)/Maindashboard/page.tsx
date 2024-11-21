@@ -14,7 +14,7 @@ import Education from "./Education";
 import Notifications from "./Notifications";
 import HelpCenter from "./HelpCenter";
 import { BrowserRouter as Router } from "react-router-dom";
-
+import CreditScore from "./CreditScore";
 export default function DashboardLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
@@ -34,6 +34,7 @@ export default function DashboardLayout() {
             <Routes>
               <Route path="/Maindashboard" element={<Dashboard />} />
               <Route path="/request-loan" element={<RequestLoan />} />
+              <Route path="/creditscore" element={<CreditScore />} />
               <Route path="/crowdfunding" element={<Crowdfunding />} />
               <Route path="/createAccount" element={<CreateAccount />} />
               <Route path="/business-insights" element={<BusinessInsights />} />
