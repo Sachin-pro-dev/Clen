@@ -21,25 +21,25 @@ const data = [
 const stats = [
   {
     name: "Wallet Balance",
-    value: "$2,500",
+    value: "₹2,500",
     icon: Wallet,
     color: "from-glow-blue to-glow-purple",
   },
   {
     name: "Outstanding Loans",
-    value: "$1,200",
+    value: "₹1,200",
     icon: CreditCard,
     color: "from-glow-purple to-glow-aqua",
   },
   {
     name: "Contributions Made",
-    value: "$3,800",
+    value: "₹3,800",
     icon: Users,
     color: "from-glow-aqua to-glow-blue",
   },
   {
     name: "Total Earnings",
-    value: "$850",
+    value: "₹850",
     icon: TrendingUp,
     color: "from-glow-blue to-glow-aqua",
   },
@@ -108,9 +108,7 @@ export default function Dashboard() {
         <div className="relative group">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-glow-purple to-glow-aqua rounded-lg opacity-50 group-hover:opacity-100 transition-opacity blur-md" />
           <div className="relative bg-dark-700 rounded-lg p-6 border border-white/10">
-            <h3 className="text-lg font-semibold text-white ">
-              Active Loans
-            </h3>
+            <h3 className="text-lg font-semibold text-white ">Active Loans</h3>
             <div className="space-y-4">
               {[
                 { name: "Business Expansion Loan", progress: 75 },
@@ -128,7 +126,7 @@ export default function Dashboard() {
                   <div className="h-2 bg-dark-600 rounded-full overflow-hidden">
                     <div
                       className="h-full bg-gradient-to-r from-glow-blue to-glow-purple"
-                      style={{ width: `${loan.progress}%` }}
+                      style={{ width: `₹{loan.progress}%` }}
                     />
                   </div>
                 </div>
@@ -137,6 +135,7 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

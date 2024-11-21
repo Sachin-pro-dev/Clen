@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import {
   Wallet,
@@ -86,7 +86,7 @@ export default function Crowdfunding() {
               <div>
                 <p className="text-gray-400">Your Balance</p>
                 <h3 className="text-3xl font-bold text-white mt-1">
-                  $2,500.00
+                  ₹2,500.00
                 </h3>
               </div>
               <Wallet className="h-12 w-12 text-glow-blue" />
@@ -109,7 +109,7 @@ export default function Crowdfunding() {
               <p className="text-gray-400">Total Contributed</p>
               <HandCoins className="h-6 w-6 text-glow-purple" />
             </div>
-            <h4 className="text-2xl font-bold text-white">$12,450</h4>
+            <h4 className="text-2xl font-bold text-white">₹12,450</h4>
             <p className="text-sm text-gray-400 mt-2">Across 15 campaigns</p>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function Crowdfunding() {
               <TrendingUp className="h-6 w-6 text-glow-aqua" />
             </div>
             <h4 className="text-2xl font-bold text-white">3</h4>
-            <p className="text-sm text-gray-400 mt-2">$3,200 total value</p>
+            <p className="text-sm text-gray-400 mt-2">₹3,200 total value</p>
           </div>
         </div>
       </div>
@@ -162,7 +162,7 @@ export default function Crowdfunding() {
                       <div className="flex justify-between text-sm mb-1">
                         <span className="text-gray-400">Progress</span>
                         <span className="text-white">
-                          ${campaign.raised} of ${campaign.goal}
+                          ₹{campaign.raised} of ₹{campaign.goal}
                         </span>
                       </div>
                       <div className="h-2 bg-dark-600 rounded-full overflow-hidden">
@@ -227,7 +227,7 @@ export default function Crowdfunding() {
                 </div>
                 <div className="text-right">
                   <p className="text-white font-medium">
-                    ${contribution.amount}
+                    ₹{contribution.amount}
                   </p>
                   <p className="text-sm text-gray-400">{contribution.time}</p>
                 </div>

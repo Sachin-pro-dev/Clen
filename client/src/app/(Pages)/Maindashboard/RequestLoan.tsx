@@ -64,10 +64,10 @@ export default function LoanRequestPage() {
         <div className="mb-8 flex items-center justify-between">
           <div>
             <p className="text-2xl font-semibold text-aqua-400 glow-aqua">
-              Your Balance: $10,000
+              Your Balance: ₹10,000
             </p>
             <p className="text-lg text-white">
-              You are eligible for a loan up to $15,000
+              You are eligible for a loan up to ₹15,000
             </p>
           </div>
           <Button className="bg-blue-600 hover:bg-blue-700 glow-blue">
@@ -216,7 +216,7 @@ export default function LoanRequestPage() {
               <CardContent className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="loanAmount" className="text-blue-300">
-                    Loan Amount: ${loanAmount}
+                    Loan Amount: ₹{loanAmount}
                   </Label>
                   <Slider
                     id="loanAmount"
@@ -276,7 +276,7 @@ export default function LoanRequestPage() {
                     Estimated Monthly Payment
                   </p>
                   <p className="text-3xl font-bold text-aqua-500 text-blue-400">
-                    ${calculateMonthlyPayment()}
+                    ₹{calculateMonthlyPayment()}
                   </p>
                   <p className="text-sm text-gray-400">
                     Based on 10% annual interest rate
@@ -380,7 +380,7 @@ export default function LoanRequestPage() {
                   Based on your profile and transaction history, we recommend:
                 </p>
                 <ul className="list-inside list-disc text-blue-300">
-                  <li>Increase your loan amount to $7,500 for better terms</li>
+                  <li>Increase your loan amount to ₹7,500 for better terms</li>
                   <li>
                     Consider a 12-month repayment period for lower monthly
                     payments
@@ -428,7 +428,7 @@ export default function LoanRequestPage() {
                 Current Community Pool:
               </p>
               <p className="text-aqua-300">
-                $50,000 available from 25 contributors
+                ₹50,000 available from 25 contributors
               </p>
             </div>
           </CardContent>
@@ -448,11 +448,11 @@ export default function LoanRequestPage() {
                   Loan Terms Summary
                 </h3>
                 <ul className="list-inside list-disc space-y-1 text-blue-300">
-                  <li>Loan Amount: ${loanAmount}</li>
+                  <li>Loan Amount: ₹{loanAmount}</li>
                   <li>Interest Rate: 10% per annum</li>
                   <li>Repayment Period: {loanTerm} months</li>
                   <li>
-                    Estimated Monthly Payment: ${calculateMonthlyPayment()}
+                    Estimated Monthly Payment: ₹{calculateMonthlyPayment()}
                   </li>
                 </ul>
               </div>

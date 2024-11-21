@@ -3,7 +3,7 @@ import { ArrowRight, Users, Briefcase, Building2 } from "lucide-react";
 import Link from "next/link";
 
 const metrics = [
-  { icon: Building2, label: "Loans Funded", value: "$2.5M" },
+  { icon: Building2, label: "Loans Funded", value: "₹2.5M" },
   { icon: Briefcase, label: "Businesses Supported", value: "1,200+" },
   { icon: Users, label: "Communities Formed", value: "350+" },
 ];
