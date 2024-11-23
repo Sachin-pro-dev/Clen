@@ -73,7 +73,7 @@ export default function EducationPage() {
               Start Learning
             </Button>
             <Button
-              className="bg-aqua-600 hover:bg-aqua-700 text-white"
+              className="bg-aqua-600 hover:bg-cyan-700 text-white"
               onClick={() => setChatbotOpen(true)}
             >
               Ask a Question
@@ -119,9 +119,9 @@ export default function EducationPage() {
                       height="315"
                       src="https://www.youtube.com/embed/KOtYd-hfaSI?si=PDjsJ3IoBgPFSwiF"
                       title="YouTube video player"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
+                      referrerPolicy="strict-origin-when-cross-origin"
                       allowfullscreen
                     ></iframe>
                     <Play className="text-blue-400 absolute" size={48} />
@@ -204,9 +204,9 @@ export default function EducationPage() {
                       height="315"
                       src="https://www.youtube.com/embed/AOP5wiu7mRU?si=BbOXdT5i06QJQgon"
                       title="YouTube video player"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
+                      referrerPolicy="strict-origin-when-cross-origin"
                       allowfullscreen
                     ></iframe>
                   </div>
@@ -242,7 +242,7 @@ export default function EducationPage() {
                     height="315"
                     src="https://www.youtube.com/embed/gze9Ybrmh6k?si=vhgyNQAQ0nPGvLL1"
                     title="YouTube video player"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen

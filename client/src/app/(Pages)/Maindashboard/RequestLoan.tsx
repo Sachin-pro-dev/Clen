@@ -56,7 +56,7 @@ export default function LoanRequestPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-cyan-200">
       <div className="container mx-auto p-4">
         <h1 className="mb-8 text-4xl font-bold text-blue-400 glow-blue">
           Loan Request
@@ -79,7 +79,7 @@ export default function LoanRequestPage() {
           <TabsList className="grid w-full grid-cols-3 bg-gray-900">
             <TabsTrigger
               value="personal"
-              className="data-[state=active]:bg-blue-800 data-[state=active]:text-white"
+              className=" data-[state=active]:bg-blue-800 data-[state=active]:text-white text-cyan-300"
             >
               Personal Information
             </TabsTrigger>

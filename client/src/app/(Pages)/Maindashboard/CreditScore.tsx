@@ -124,10 +124,10 @@ export default function CreditScorePage() {
     setCreditScore(hardcodedScore);
     setDialogOpen(true);
 
-    toast({
-      title: "Form submitted successfully",
-      description: "Your credit score has been calculated.",
-    });
+    // toast({
+    //   title: "Form submitted successfully",
+    //   description: "Your credit score has been calculated.",
+    // });
   }
 
   function getCreditScoreCategory(score: number) {
@@ -147,7 +147,8 @@ export default function CreditScorePage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#121212] text-white p-8">
+    <div className="min-h-screen text-white p-8">
+      
       <h1 className="text-4xl font-bold mb-8 text-center">
         Nano-Entrepreneur Credit Score Check
       </h1>
@@ -648,6 +649,7 @@ export default function CreditScorePage() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+     
     </div>
   );
 }
